@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171228131235) do
+ActiveRecord::Schema.define(version: 20180108044336) do
 
   create_table "activities", force: :cascade do |t|
     t.string "title"
@@ -22,6 +22,15 @@ ActiveRecord::Schema.define(version: 20171228131235) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["member_id"], name: "index_activities_on_member_id"
+  end
+
+  create_table "collections", force: :cascade do |t|
+    t.integer "member_id"
+    t.integer "product_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["member_id"], name: "index_collections_on_member_id"
+    t.index ["product_id"], name: "index_collections_on_product_id"
   end
 
   create_table "members", force: :cascade do |t|
@@ -43,6 +52,15 @@ ActiveRecord::Schema.define(version: 20171228131235) do
     t.datetime "updated_at", null: false
     t.index ["member_id"], name: "index_orders_on_member_id"
     t.index ["product_id"], name: "index_orders_on_product_id"
+  end
+
+  create_table "participates", force: :cascade do |t|
+    t.integer "member_id"
+    t.integer "activity_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["activity_id"], name: "index_participates_on_activity_id"
+    t.index ["member_id"], name: "index_participates_on_member_id"
   end
 
   create_table "products", force: :cascade do |t|
