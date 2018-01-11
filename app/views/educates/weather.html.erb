@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript">
+    window.onload=function(){
+      var box = document.getElementsByClassName('box');
+      var i;
+      for(i=0;i<box.length;i++){
+      box[i].addEventListener("mouseover", function(){
+        this.style.opacity=0.5;
+        this.style.backgroundColor="#FF5511";
+      });
+      box[i].addEventListener("mouseout", function() {
+          this.style.opacity=1;
+          this.style.backgroundColor="#E2F8B5";
+      });
+    }
+    };
+    </script>
+    <style type="text/css">
+      body {
+        background-image:url('6.jpg');
+        background-repeat;
+        font-family:Microsoft JhengHei;
+      }
+      #HEADER {
+        background-color: #E2F8B5;
+        font-size: 30px;
+        text-align:center;
+      }
+      ul li {
+      }
+      #WRAPPER {
+        margin:0 auto;
+        width:95%;
+        /* overflow:auto; */
+      }
+      #CONTENT{
+        margin-left:25%;
+        width:75%;
+        height: auto;
+        background-color:#E2F8B5;
+        font-size: 18px;
+      }
+      #SIDE {
+        float:left;
+        width:20%;
+        font-size: 30px;
+        height: auto;
+      }
+      #FOOTER {
+      }
+      .box{
+        width: 100%;
+        height:auto;
+        background-color:#E2F8B5;
+        /* opacity: 0.5; */
+        transition: opacity 1s, background-color 1s;
+      }
+      a {
+        text-decoration:none;
+      }
+    </style>
+  </head>
+  <body>
+    <div id= "HEADER">
+      <h1>育</h1>
+    </div>
+    <div>
+      <ul>
+        <li><a href="#">環保常識</a></li>
+      </ul>
+    </div>
+    <div id="WRAPPER">
+      <div id="SIDE">
+        <div style="background-color:#1BC005;padding: 5% 4%;font-size:36px;font-weight:bold;">生活環保</div>
+
+        <div style="background-color: #E2F8B5;line-height: 150%;padding-top:5%;padding-bottom:5%;text-align:center;">
+
+            <div class="box" id="box" ><a href="#">氣候變遷</a></div>
+            <div class="box" id="box" ><a href="#">海洋危機</a></div>
+            <div class="box" id="box" ><a href="#">塑化危機</a></div>
+            <div class="box" id="box"><a href="#">公害汙染</a></div>
+        </div>
+      </div>
+      <div id="CONTENT">
+        <h1 style="padding-top:2%;padding-bottom:0.5%;padding-left:4%;">氣候變遷</h1>
+        <div style="background-color:#FFCCCC;padding-left:1%;padding-right:1%;padding-bottom:4%;margin-left:4%;margin-right:4%;margin-bottom:5%">
+          <h2 style="padding-top:3%;padding-left:4%;">【氣候變遷加劇 第六次物種大滅絕啟動】</h2>
+          <h4 style="padding-top:1.5%;padding-left:5%">影片出處:YouTube 三立LIVE新聞&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;類別:氣候變遷</h4>
+          <h4 style="padding-left:5%;padding-bottom:3%">文章出處:交通部中央氣象局【氣候變遷的原因】</h4>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/VrjYc6---eI" frameborder="0" style="display:block;margin:auto;" ></iframe>
+
+            <div style="padding-top:2%;padding-left:5%;padding-right:4%;">
+              <h3 style="background-color:#CCEEFF;border-radius:10px;padding-left:1%">氣候變遷原因</h3>
+              <h4 style="color:	#FF3333;padding-left:1%">工業革命前的氣候變遷</h4>
+                <div style="padding-left:1%;padding-right:1%">
+                  在地球的歷史中有很多次的氣候變化，地球輻射平衡的變化是過去氣候變化的主要驅動因素。從冰期開始到過去近300萬年，有充分的證據顯示，這段期間的氣候變化與地球圍繞太陽的軌道的週期變化有關，也即所謂的米蘭科維奇循環（圖1）。這些週期改變了每個緯度每個季節接收的太陽輻射(但幾乎對全球年平均值沒有影響)。有許多研究顯示，北半球各大洲夏季日照量相當重要：如果低於某個門檻值，上一個冬季的雪在夏季就不會融化，隨著越來越多的雪積累下來，冰原就開始增厚。在冰河期，大氣中的二氧化碳雖然不是氣候變化的首要原因，但它也起了重要的作用。即由於米蘭科維奇週期最初引發的小幅冷卻，隨著二氧化碳濃度下降而被放大。在研究古代氣候的數值模擬中，只有在考慮到二氧化碳作用的情況下，冰期氣候的模擬才能產生令人滿意的結果。
+                  <br><br>過去氣候變化的另一個可能的原因是太陽能量輸出的變化。最近幾十年的觀測顯示太陽能量輸出在11年的週期中有略有變化（接近0.1%）。太陽黑子觀測（可追溯到17世紀）以及從宇宙輻射產生的同位素資料證明了太陽活動的長期變化。資料相關性和模式類比結果均顯示，在工業化時代開始前的1百萬年中，太陽變化和火山活動有可能是導致氣候變異的首要原因。
+                  <img src="8.png" width="70%";height="auto" style="padding-top:2%;display:block;margin:auto;">
+                  <p style="padding-bottom:1%;font-size:12px">圖1：驅動冰期的週期（米蘭科維奇循環）的地球軌道變化示意圖。“T”表示地軸傾斜度的變化，“E”表示離心力的變化（由於橢圓軌道短軸的變化引起），“P”代表歲差，即以軌道上某一特定軌道位置上，地軸傾斜方向的變化。出處：Rahmstorf和Schellnhuber(2006)
+                    <br>< 圖片來源：政府間氣候變遷委員會第1工作組第4次評估報告常見問題6.1, 圖1 ></p>
+                </div>
+                <h4 style="color:	#FF3333;padding-left:1%">近百年氣候變遷的原因</h4>
+                <div style="padding-left:1%;padding-right:1%;padding-bottom:5%">
+                  雖然有許多要素不斷影響著氣候，科學家已經確定人類活動已成為一個主要的作用力。人為引起的氣候變化主要是由於大氣中溫室氣體含量的變化造成的，此外大氣中懸浮微粒(又名：氣溶膠，氣膠)的變化，以及土地使用的變化等也是氣候變化的原因。人為排放的溫室氣體自工業化時代（大約1750年）起增加。目前大氣中的二氧化碳、甲烷和氧化亞氮濃度已達到過去80萬年以來的最高點。這些人為排放的溫室氣體和其他人為活動的影響遍及整個氣候系統，被認為非常可能是20世紀以來氣候暖化的主因。IPCC於2013年發布的第5次評估報告指出，1951-2010年所觀測到的全球增溫，有一半以上極可能是由人類活動所致。<br><br>圖2是各項因素對於1951-2010年期間所觀測到的地表溫度變化所產生的貢獻。其中溫室氣體是暖化的最大貢獻來源。而人為溫室氣體的最主要來源是燃燒化石燃料，向大氣中釋放二氧化碳。在這個時代，人類對氣候的影響超過了太陽活動、火山爆發等自然過程的變化帶來的影響。
+                  <img src="9.png" width="70%";height="auto" style="padding-top:2%;display:block;margin:auto;">
+                  <p style="font-size:12px">圖2：1951-2010年期間各項因素造成的暖化程度評估。為混合均勻的溫室氣體、其他人為作用力（包括氣溶膠的冷卻作用和土地使用改變的作用）、人為作用的總合、自然作用和內部動力變異（即在沒有作用力之下自然發生的氣候系統內部變異）所引起1951-2010年溫度變化程度評估。鬚狀為可能區間，橫條為中間點。圖中用黑色表示觀測到的地表溫度變化，在5～95%的不確定區間。暖化幅度的估算結合了觀測和氣候模擬的結果，合併的人為作用力的貢獻比分開評估溫室氣體和其他人為作用的影響能更清楚呈現人類對氣候的影響。
+                    <br><圖片來源：政府間氣候變遷委員會第1工作組第5次評估報告綜合報告決策者摘要圖3 >
+                  </p>
+                </div>
+
+          </div>
+        </div>
+        <div style="background-color:#FFFFBB;padding-left:1%;padding-right:1%;padding-bottom:4%;margin-left:4%;margin-right:4%;margin-bottom:5%">
+          <h2 style="padding-top:3%;padding-left:4%;">【改用再生能源 刻不容緩】</h2>
+          <h4 style="padding-top:1.5%;padding-left:5%">影片出處:YouTube 鏡周刊&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;類別:氣候變遷</h4>
+          <h4 style="padding-left:5%;padding-bottom:3%">文章出處:新頭殼【氣候變遷受害者 紙片北極熊皮包骨 攝影師哭哭】</h4>
+
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/EGRMCLx1rOM" frameborder="0"style="display:block;margin:auto;"></iframe>
+            <div style="padding-top:2%;padding-left:5%;padding-right:4%;">
+              <div style="padding-left:1%;padding-right:1%">
+                攝影師在北極圈巴芬島拍到骨瘦如柴北極熊拖著羸弱身軀覓食的畫面，影像在社群媒體瘋傳，引發各界關切氣候變遷帶來的衝擊。面對垂死生命，攝影師回憶邊哭邊拍過程，震撼人心。
+                <br><br>英國「衛報」（The Guardian）報導，保育組織「海洋遺產」（Sea Legacy）攝影師尼克連（PaulNicklen）帶領的團隊，於今年夏末在加拿大的巴芬島（Baffin Island）捕捉到這一令人心痛的畫面。
+                <br><br>尼克連本週把這一段影片放到社群媒體上後表示：「在拍攝這頭垂死的北極熊時，我的整個團隊在淚水和感傷中勉力完成。」
+                <br><br>尼克連告訴「國家地理雜誌」（NationalGeographic）：「我們站在那裡淚流不止，拍攝時淚水從臉頰流下來。」
+                <br><br>影片中可見，這頭瘦得只剩皮包骨的北極熊一路步履蹣跚尋找食物，最後看到一只伊努特族（Inuit）漁夫使用的垃圾桶，翻找後並無所獲。
+                <br><br>尼克連指出，這頭北極熊年紀並不大，可能在拍攝後數小時之內就死亡了。他說：「這就是饑餓的模樣，肌肉萎縮、沒有活力，慢慢痛苦死亡。」
+                <br><br>影片製作人認為，北極熊處境和氣候變遷直接相關。影片旁白說：「隨著溫度上升，海冰融化，北極熊失去牠們的主食－海豹。」「饑餓以及漸漸喪失能量，牠們被迫流浪到人類聚落，尋找食物的任何可能來源。」
+                <br><br>尼克連把影片掛上Instagram後，很快吸引一百多萬名網友觀看。尼克連被問到，為何他和團隊沒有向北極熊伸出援手。他告訴「國家地理雜誌」：「我當然有這樣的念頭，但我身邊沒有麻醉槍或是400磅海豹肉。」在加拿大，餵食北極熊也是違法的。
+                <br><br>尼克連在社群媒體上強調整個北極熊物種面臨的威脅，這已成為氣候變遷蹂躪的象徵。「簡單的道理是如果地球持續暖化，我們將失去北極熊以及整個北極生態系。」
+                <img src="10.png" width="70%";height="auto" style="padding-top:3%;display:block;margin:auto;">
+                <img src="11.png" width="70%";height="auto" style="padding-top:3%;display:block;margin:auto;">
+                <img src="12.png" width="70%";height="auto" style="padding-top:3%;display:block;margin:auto;">
+                <img src="13.png" width="70%";height="auto" style="padding-top:3%;display:block;margin:auto;">
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </body>
+</html>

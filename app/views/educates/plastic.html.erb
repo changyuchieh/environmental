@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript">
+    window.onload=function(){
+      var box = document.getElementsByClassName('box');
+      var i;
+      for(i=0;i<box.length;i++){
+      box[i].addEventListener("mouseover", function(){
+        this.style.opacity=0.5;
+        this.style.backgroundColor="#FF5511";
+      });
+      box[i].addEventListener("mouseout", function() {
+          this.style.opacity=1;
+          this.style.backgroundColor="#E2F8B5";
+      });
+    }
+    };
+    </script>
+    <style type="text/css">
+      body {
+        background-image:url('6.jpg');
+        background-repeat;
+        font-family:Microsoft JhengHei;
+      }
+      #HEADER {
+        background-color: #E2F8B5;
+        font-size: 30px;
+        text-align:center;
+      }
+      ul li {
+      }
+      #WRAPPER {
+        margin:0 auto;
+        width:95%;
+        /* overflow:auto; */
+      }
+      #CONTENT{
+        margin-left:25%;
+        width:75%;
+        height: auto;
+        background-color:#E2F8B5;
+        font-size: 18px;
+      }
+      #SIDE {
+        float:left;
+        width:20%;
+        font-size: 30px;
+        height: auto;
+      }
+      #FOOTER {
+      }
+      .box{
+        width: 100%;
+        height:auto;
+        background-color:#E2F8B5;
+        /* opacity: 0.5; */
+        transition: opacity 1s, background-color 1s;
+      }
+      a {
+        text-decoration:none;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div id= "HEADER">
+      <h1>育</h1>
+    </div>
+    <div>
+      <ul>
+        <li><a href="#">環保常識</a></li>
+      </ul>
+    </div>
+    <div id="WRAPPER">
+      <div id="SIDE">
+        <div style="background-color:#1BC005;padding: 5% 4%;font-size:36px;font-weight:bold;">生活環保</div>
+
+        <div style="background-color: #E2F8B5;line-height: 150%;padding-top:5%;padding-bottom:5%;text-align:center;">
+
+            <div class="box" id="box" ><a href="#">氣候變遷</a></div>
+            <div class="box" id="box" ><a href="#">海洋危機</a></div>
+            <div class="box" id="box" ><a href="#">塑化危機</a></div>
+            <div class="box" id="box"><a href="#">公害汙染</a></div>
+        </div>
+      </div>
+      <div id="CONTENT">
+        <h1 style="padding-top:2%;padding-bottom:0.5%;padding-left:4%;">塑化危機</h1>
+        <div style="background-color:#FFFFBB;padding-left:1%;padding-right:1%;padding-bottom:4%;margin-left:4%;margin-right:4%;margin-bottom:5%">
+          <h2 style="padding-top:3%;padding-left:4%;">【微波餐盒超過60秒 小心溶出塑化劑】</h2>
+          <h4 style="padding-top:1.5%;padding-left:5%">影片出處:YouTube 東森新聞 CH51&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;類別:塑化危機</h4>
+          <h4 style="padding-left:5%;padding-bottom:3%">文章出處:環境資訊中心【2015環境議題回顧：塑化危機】</h4>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/1hPpeRHYOpM" frameborder="0" style="display:block;margin:auto;"></iframe>
+
+          <div style="padding-top:6%;padding-left:5%;padding-right:4%;">
+            <div style="padding-left:1%;padding-right:1%">
+              聞「塑」色變的滅塑年代來了！從擔憂個人健康塑化程度到自發行動倡議，今年特別在幾個動物受害事件得到驗證，公眾並因此能更警覺、意識到海陸同歸一體的臍帶性，塑膠垃圾害到生物，終將經食物鏈反作用回到人類身上。而積極促進立法方面，美國《禁用塑膠微粒護水法案》臨門差一腳將可望生效，尤其值得關注參照。
+              <h4 style="color:	#FF3333;padding-top:2%">塑化劑損害下一代智商</h4>
+              國際研究指出，常見於食物容器、塑膠、家具、玩具、化妝品等的內分泌干擾素（又稱環境荷爾蒙，EDCs），導致歐洲必須付出的健康成本大幅增加，直逼鉛汞中毒。德國測試嬰兒塑膠固齒器，亦檢出EDCs，塑化入侵無所不在。
+              <br><br>在台灣，國家衛生研究院則在11月發表一項針對國人塑化劑暴露的調查，顯示暴露較高的族群為育齡女性與未成年人；而外食塑膠餐具、沐浴乳、個人衛生用品、香水、化妝等用品是目前塑化劑高暴露的來源。長期攝入塑化劑除了造成兒童生殖功能傷害，現更證實會降低兒童智商，且台灣人民的攝食量比歐盟、美國高。
+              <h4 style="color:	#FF3333;padding-top:2%">塑膠微粒大作戰</h4>
+              不過今年，可說是禁用塑膠微粒成果斐然的一年，繼美國伊利諾州立法逐步淘汰含塑膠微粒的個人清潔用品後，加州議會9月初亦通過法案，禁止境內販賣任何內含超過1ppm（百萬分之一）塑膠微粒的個人清潔用品。如今，美國已有8個州宣布禁用塑膠微粒，加拿大與澳洲也擬禁用。
+              <br><br>而看守台灣協會7月起展開大規模調查後表示，市售308款洗面乳及沐浴乳當中，發現108款含有危害環境甚鉅的塑膠微粒柔珠。猶如聖誕禮物，12月美參議院無條件通過Microbead-Free Waters Act法案（H.R.1321），只差總統歐巴馬簽字，即自2017年7月1日起，全美禁止製造含塑膠微粒之個人清潔用品，並於2018年7月1日起，禁止流通販售。面對廣大時勢所趨，台灣的環保署卻仍保守回應研擬中，最快3年後禁用。
+              <h4 style="color:	#FF3333;padding-top:2%">眾生平等，免於塑害</h4>
+              塑膠微粒污染乃世界性難題，是近年來海洋毒理學研究一項熱門領域。除百年無法分解汙染環境外，其親油性易吸附重金屬、有機汙染物等有害物質再經食物鏈影響人類健康。9月，跨國團隊發表首個探討塑膠垃圾和餐桌上食用魚關連性的研究：印尼55%、加州67%漁獲驗出塑膠製品垃圾。且最新研究估計，至2050年全球99%海鳥曾誤食塑膠製品。10月美媒還披露，中國的海鹽「超膠」，驗出1磅食鹽含1,200粒塑膠微粒，雖其毒害性尚不能輕易驟下結論，則作為一個警訊。
+              <br><br>8月，保育團體Leatherback Trust從欖蠵龜鼻孔取出10公分長吸管的影片網路流傳，讓人心疼不已，引發大眾拒用塑膠吸管響應；12月另有海龜鼻孔被更長的塑膠叉子卡住，沒能被救援的生物更多，吃什麼下肚人類或有選擇，無言的動物你有想過嗎？因為你只想到你自己順手又拿起吸管或使用一次性塑膠製品時，請勿善忘，想想旁觀他者之痛苦。
+              <br><br>6月底，短肢領航鯨「小梧子」在台中梧棲海邊擱淺，救援5天不幸死亡；10月，再有擱淺於嘉義縣八掌溪出海口沙洲的抹香鯨屍體，牠們經成大海洋生物暨鯨豚研究中心解剖發現，胃部塞滿塑膠袋，導致無法進食。塑食奪命何其無辜，網友因此發起挑戰30天不使用塑膠袋，拒當間接殺手，保護更多生命。
+              <h4 style="color:	#FF3333;padding-top:2%">減塑，全面啟動</h4>
+              如何打擊塑膠？可食塑膠到回收海廢，多元創新技術與報告陸續推出。包括全球第一張由巴西科學家用蔬果做出的塑膠膜；3月，瑞士海洋保護基金會（Race for Water Foundation）進行第一次全球海洋塑料汙染情況評估，航海考察五大垃圾漩渦及其附近島嶼；6月初聯合國環境規劃署（UNEP）「地球鬥士獎」得主──荷蘭NGO海洋清理基金會（The Ocean Cleanup）宣布，將自明年起先於日本海岸啟動「全球海洋垃圾清理計劃」第一階段，海洋清理陣列（The Ocean Cleanup Array）將利用洋流集中垃圾，企圖5年內清理掉200億噸海洋塑膠垃圾；重大發現──麵包蟲可以吞食和完全分解塑料；全自動海洋垃圾桶（Seabin Project）；台灣環境資訊協會建置「Water Go！行動計畫」免費飲水地圖，藉便利取水以減少塑膠瓶、瓶蓋.......等等新聞。
+              <br><br>許多海洋環境日讓人們身體力行，在地串連，5月23日世界烏龜日，荒野保護協會等團體、志工發起小琉球淨灘行動，用海洋廢棄物組成地景藝術呼應之；6月9日世界海洋日，今年主題為「健康海洋，健康星球」（Healthy oceans, healthy planet）；7月3日國際無塑膠日，分享塑膠故事；9月19日第30屆國際淨灘日，則推出Clean Swell手機應用程式提供追蹤相關數據和活動。
+              <h4 style="color:	#FF3333;padding-top:2%">國家、公部門亟需積極作為</h4>
+              然且，終歸得從源頭解決，4月初，歐洲議會環境委員會通過限制塑膠袋用量新法案，訂定具強制力的減量目標，比如2019年前，每人每年塑膠袋用量降至90個以下。而7月1日起，夏威夷禁塑令正式實施，成為全美第一州。11月法國宣布一次性塑膠袋禁用政策將延後6個月實施，以利商家消耗完庫存的塑膠袋。
+              <br><br>人類每年製造一億噸塑料垃圾，其中10%約800萬噸流入海洋，實際進入的垃圾量，更是海面上可見超過5兆件塑膠垃圾之10~30倍。不過，海洋還有救！只要各國嚴訂規範、確實執行，尤其前20名汙染國（中國名列第一）若能讓管理不當的塑膠垃圾減少50%，至2025年就能減少41%預計進入海洋的塑膠垃圾量。
+              <br><br>「塑」速退散，需要人類自覺拒絕無知，徹底改變生活裡的習慣模式。塑化危機，一場人人都可即刻參與實踐的長期抗戰，告別塑料不輕鬆亦不困難只有一點點麻煩而已，但在這個星球上，所有的生命都很美麗珍貴，值得為此奮鬥吧。
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

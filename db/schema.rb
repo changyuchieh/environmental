@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180108044336) do
+ActiveRecord::Schema.define(version: 20180111063311) do
 
   create_table "activities", force: :cascade do |t|
     t.string "title"
@@ -32,6 +32,9 @@ ActiveRecord::Schema.define(version: 20180108044336) do
     t.index ["member_id"], name: "index_collections_on_member_id"
     t.index ["product_id"], name: "index_collections_on_product_id"
   end
+
+# Could not dump table "issues" because of following StandardError
+#   Unknown type 'String' for column 'photourl'
 
   create_table "members", force: :cascade do |t|
     t.string "user_id"

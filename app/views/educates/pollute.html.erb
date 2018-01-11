@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript">
+    window.onload=function(){
+      var box = document.getElementsByClassName('box');
+      var i;
+      for(i=0;i<box.length;i++){
+      box[i].addEventListener("mouseover", function(){
+        this.style.opacity=0.5;
+        this.style.backgroundColor="#FF5511";
+      });
+      box[i].addEventListener("mouseout", function() {
+          this.style.opacity=1;
+          this.style.backgroundColor="#E2F8B5";
+      });
+    }
+    };
+    </script>
+    <style type="text/css">
+      body {
+        background-image:url('6.jpg');
+        background-repeat;
+        font-family:Microsoft JhengHei;
+      }
+      #HEADER {
+        background-color: #E2F8B5;
+        font-size: 30px;
+        text-align:center;
+      }
+      ul li {
+      }
+      #WRAPPER {
+        margin:0 auto;
+        width:95%;
+        /* overflow:auto; */
+      }
+      #CONTENT{
+        margin-left:25%;
+        width:75%;
+        height: auto;
+        background-color:#E2F8B5;
+        font-size: 18px;
+      }
+      #SIDE {
+        float:left;
+        width:20%;
+        font-size: 30px;
+        height: auto;
+      }
+      #FOOTER {
+      }
+      .box{
+        width: 100%;
+        height:auto;
+        background-color:#E2F8B5;
+        /* opacity: 0.5; */
+        transition: opacity 1s, background-color 1s;
+      }
+      a {
+        text-decoration:none;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div id= "HEADER">
+      <h1>育</h1>
+    </div>
+    <div>
+      <ul>
+        <li><a href="#">環保常識</a></li>
+      </ul>
+    </div>
+    <div id="WRAPPER">
+      <div id="SIDE">
+        <div style="background-color:#1BC005;padding: 5% 4%;font-size:36px;font-weight:bold;">生活環保</div>
+        <div style="background-color: #E2F8B5;line-height: 150%;padding-top:5%;padding-bottom:5%;text-align:center;">
+
+            <div class="box"><a href="#">氣候變遷</a></div>
+            <div class="box"><a href="#">海洋危機</a></div>
+            <div class="box"><a href="#">塑化危機</a></div>
+            <div class="box"><a href="#">公害汙染</a></div>
+        </div>
+      </div>
+
+      <div id="CONTENT">
+        <h1 style="padding-top:2%;padding-bottom:0.5%;padding-left:4%;">公害污染</h1>
+        <div style="background-color:	#DDDDDD;padding-left:1%;padding-right:1%;padding-bottom:4%;margin-left:4%;margin-right:4%;margin-bottom:5%">
+          <h2 style="padding-top:3%;padding-left:4%;">【中國的污染已經達到世界末日水平】</h2>
+          <h4 style="padding-top:1.5%;padding-left:5%">影片出處:YouTube China Uncensored&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;類別:公害污染</h4>
+          <h4 style="padding-left:5%;padding-bottom:3%">文章出處:自由時報【自由限時批》中國竟成了「公害」！】</h4>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/QYwHw0qGZPk" frameborder="0" style="display:block;margin:auto;" ></iframe>
+
+          <div style="padding-top:6%;padding-left:5%;padding-right:4%;">
+            <div style="padding-left:1%;padding-right:1%">
+              <h4 style="color:	#FF3333;padding-top:2%">塑化劑損害下一代智商</h4>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

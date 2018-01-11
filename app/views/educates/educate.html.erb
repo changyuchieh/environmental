@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript">
+    window.onload=function(){
+      var box = document.getElementsByClassName('box');
+      var i;
+      for(i=0;i<box.length;i++){
+      box[i].addEventListener("mouseover", function(){
+        this.style.opacity=0.5;
+        this.style.backgroundColor="#FF5511";
+      });
+      box[i].addEventListener("mouseout", function() {
+          this.style.opacity=1;
+          this.style.backgroundColor="#E2F8B5";
+      });
+    }
+    };
+    </script>
+    <style type="text/css">
+      body {
+        background-image:url('6.jpg');
+        background-repeat;
+        font-family:Microsoft JhengHei;
+      }
+      #HEADER {
+        background-color: #E2F8B5;
+        font-size: 30px;
+        text-align:center;
+      }
+      ul li {
+      }
+      #WRAPPER {
+        margin:0 auto;
+        width:95%;
+        /* padding:0 2%; */
+        overflow:auto;
+      }
+      #CONTENT{
+        margin-left:25%;
+        width:75%;
+        height: auto;
+        background-color:#E2F8B5;
+        font-size: 18px;
+        padding-bottom: 5%
+      }
+      #SIDE {
+        float:left;
+        width:20%;
+
+        font-size: 30px;
+        height: auto;
+      }
+      #FOOTER {
+      }
+      .box{
+        width: 100%;
+        height:auto;
+        background-color:#E2F8B5;
+        /* opacity: 0.5; */
+        transition: opacity 1s, background-color 1s;
+      }
+      a {
+        text-decoration:none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id= "HEADER">
+      <h1>育</h1>
+    </div>
+
+    <div>
+      <ul>
+        <li><a href="#">環保常識</a></li>
+      </ul>
+    </div>
+
+    <div id="WRAPPER">
+      <div id="SIDE">
+        <div style="background-color:#1BC005;padding: 5% 4%;font-size:36px;font-weight:bold;">
+          生活環保
+        </div>
+
+        <div style="background-color: #E2F8B5;line-height: 150%;padding-top:5%;padding-bottom:5%;text-align:center;">
+            <div class="box" id="box" ><a href="#">氣候變遷</a></div>
+            <div class="box" id="box" ><a href="#">海洋危機</a></div>
+            <div class="box" id="box" ><a href="#">塑化危機</a></div>
+            <div class="box" id="box"><a href="#">公害汙染</a></div>
+        </div>
+      </div>
+      <div id="CONTENT">
+        <div>
+          <%if ture %>
+             "test"
+          <% else %>
+
+          <% end%>
+
+          <!-- <% @educates.each do |educate| %>
+          <%= educate.title%>
+          <%= educate.source %> -->
+          <div style="padding-right:2%;padding-bottom:2%;align-self: center">
+          <img src="3.png" width="35%";height="auto"style="padding:0.5% 4%;float:left">
+          <%="educate_path"%><h2>【1】</h2></a>
+          <h4>出處:YouTube 三立LIVE新聞&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;類別:氣候變遷</h4>
+            科學家確定人類活動已成為氣候變遷主要的作用力，人為排放的溫室氣體自1750年起增加。
+            目前大氣中的二氧化碳、甲烷和氧化亞氮濃度已達到過去80萬年以來的最高點。
+            <br><a href="educate_path" class="box"  style="color:#888888;">閱讀更多</a><br><br>
+          </div>
+          <div style="padding-right:2%;padding-bottom:4%;align-self: center">
+            <img src="4.png" width="35%";height="auto"style="padding:0.5% 4%;float:left">
+            <a href="#"><h2>【改用再生能源 刻不容緩】</h4></a>
+            <h4>出處:YouTube 鏡週刊&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;類別:氣候變遷</h4>
+            北極熊處境和氣候變遷直接相關。隨著溫度上升，海冰融化，北極熊失去牠們的主食－海豹。
+            饑餓以及漸漸喪失能量，牠們被迫流浪到人類聚落，尋找食物的任何可能來源。
+            <br/><a href="educate_path" class="box" id="box" style="color:#888888;">閱讀更多</a><br>
+          </div>
+        </div>
+
+        <div>
+
+          <div style="padding-right:2%;padding-bottom:2%;align-self: center">
+
+            <img src="1.png" width="35%";height="auto"style="padding:0.5% 4%;float:left">
+            <a href="#"><h2>【海洋版看見台灣 垃圾汙染毀生態】</h2></a>
+            <h4>出處:YouTube 中華電視公司&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;類別:海洋危機</h4>
+            海洋廢棄物包括人類製造的塑料垃圾，和漁民丟置的漁網與繩索，這兩項是海洋生態最大的殺手，
+            透過環流，一部份會堆積在海灘，還有一部份則沉入海底，
+            不僅讓海底珊瑚無法行光合作用，使得大片白化死亡，更讓許多海洋生物死於非命。
+            <br><a href="educate_path" class="box" id="box" style="color:#888888;">閱讀更多</a>
+          </div>
+
+          <div style="padding-right:2%;padding-bottom:2%;align-self: center">
+            <img src="2.png" width="35%";height="auto"style="padding:0.5% 4%;float:left">
+            <a href="#"><h2>【5分鐘影片，道盡海洋危機】</h2></a>
+            <h4>出處:YouTube GPEA Taiwan&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;類別:海洋危機</h4>
+            2015年夏天，綠色和平海洋專案主任顏寧親身登上順得慶888號揭露非法漁船作業情形。
+            這艘臺灣籍漁船違反諸多規定，也突顯管理單位漁業署的失責。
+            如果您身邊有關心海洋議題的朋友，請一定要分享這支影片給他們，了解事件始末。
+            <br><a href="educate_path" class="box" id="box" style="color:#888888;">閱讀更多</a>
+          </div>
+        </div>
+        <div>
+
+          <div style="padding-right:2%;padding-bottom:5%;align-self: center">
+            <img src="5.png" width="35%";height="auto"style="padding:0.5% 4%;float:left">
+            <a href="#"><h2>【微波餐盒超過60秒 小心溶出塑化劑】</h2></a>
+            <h4>出處:YouTube 東森新聞 CH51&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;類別:塑化危機</h4>
+            聞「塑」色變的滅塑年代來了！
+            從擔憂個人健康塑化程度到自發行動倡議，公眾能更警覺、意識到海陸同歸一體的臍帶性，塑膠垃圾害到生物，終將經食物鏈反作用回到人類身上。
+            <br><a href="educate_path" class="box" id="box" style="color:#888888;">閱讀更多</a>
+          </div>
+        </div>
+        <div>
+
+          <div style="padding-right:2%;padding-bottom:2%;align-self: center">
+            <img src="7.png" width="35%";height="auto"style="padding:0.5% 4%;float:left">
+            <a href="#"><h2>【中國的污染已經達到世界末日水平】</h2></a>
+            <h4>出處:YouTube China Uncensored&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;類別:公害污染</h4>
+            中國已有12個省市、5億人的，正籠罩在「霧霾」生活之中！
+            而北京等6省40個城市則已陷入75萬平方公平方公里「霾」害範圍內，
+            例如石家莊PM2.5破千，人民苦不堪言！北京當局竟然還下封殺令，要求媒體不准報導和攝影。
+            <br><a href="educate_path" class="box" id="box" style="color:#888888;">閱讀更多</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+
+</html>
